@@ -9,7 +9,8 @@ app = FastAPI(title="SEM Planner Backend")
 # CORS middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # allows all origins; restrict in production
+    allow_origins=["http://localhost:5173",
+        "https://stalwart-gnome-d37da4.netlify.app"],  # allows all origins; restrict in production
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
